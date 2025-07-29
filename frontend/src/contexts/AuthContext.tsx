@@ -17,7 +17,7 @@ const AuthContext = createContext<AuthContextType>({
   refreshToken: async () => {},
 });
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = 'https://mindfullai.onrender.com/api';
 
 export const AuthProvider: React.FC<ChildrenProps> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);

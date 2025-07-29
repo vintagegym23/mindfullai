@@ -1,5 +1,5 @@
 export async function sendMessage(message: string, sessionId: string, token: string) {
-  const response = await fetch("http://localhost:8000/api/chat/message/", {
+  const response = await fetch("https://mindfullai.onrender.com/api/chat/message/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
